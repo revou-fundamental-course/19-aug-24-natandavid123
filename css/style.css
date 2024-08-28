@@ -66,8 +66,9 @@ nav{
 }
 
 .form{
-    display: inline-block;
-    width: 250px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .divForm{
@@ -85,4 +86,44 @@ padding: 30px;
     height: 250px;
     width: 300px;
     margin: 20px;
+}
+
+.formNama{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formTanggalLahir{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formJenisKelamin{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.formPesan{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formButtonSubmit{
+    text-align: center;
+}
+
+.buttonSubmit{
+    width: 300px;
+}
+
+.textAreaPesan{
+    width: 180px;
+}
+
+.tanggalLahirClass{
+    width: 180px;
+}
+
+.textNama{
+    width: 177px;
 }

@@ -68,20 +68,33 @@
             <div class="divForm">
             <header class="judulForm">Messsage Us</header>
             <form action="" class="form">
-                <label for="nama">Nama      : </label>
-                <input type="text">
+                <div class="formNama">
+                    <label for="nama">Nama      : </label>
+                    <input type="text" class="textNama">
+                </div>
 
-                <label for="tanggalLahir">Tanggal Lahir     : </label>
-                <input type="date">
+                <div class="formTanggalLahir">
+                    <label for="tanggalLahir">Tanggal Lahir     : </label>
+                    <input type="date" class="tanggalLahirClass">
+                </div>
 
-                <label for="jenisKelamin">Jenis Kelamin     : </label>
-                <input type="radio" id="pria" name="jenisKelamin"><label for="pria">Pria</label>
-                <input type="radio" id="wanita" name="jenisKelamin"><label for="wanita">Wanita</label>
+                <div class="formJenisKelamin">
+                    <label for="jenisKelamin">Jenis Kelamin     : </label>
+                        <div>
+                            <input type="radio" id="pria" name="jenisKelamin"><label for="pria">Pria</label>
+                            <input type="radio" id="wanita" name="jenisKelamin"><label for="wanita">Wanita</label>
+                        </div>
+                </div>
 
-                <label for="pesan">Pesan        : </label>
-                <textarea name="" id="pesan"></textarea>
+                <div class="formPesan">
+                    <label for="pesan">Pesan        : </label>
+                    <textarea name="" id="pesan" class="textAreaPesan"></textarea>
+                </div>
 
-                <input type="button" value="Submit">
+                <div class="formButtonSubmit">
+                    <input type="button" value="Submit" class="buttonSubmit">
+                </div>
+
             </form>
             </div>
 
