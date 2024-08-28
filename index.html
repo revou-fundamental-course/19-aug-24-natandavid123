@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    <nav>
+    <nav class="navigation">
         <header>
             <div class="logo-icon"></div>
         </header>
@@ -15,14 +15,12 @@
         <section class="nav-container">
             <a href="#" class="nav-item">Home</a>
             <a href="#our-profile" class="nav-item">Our Profile</a>
-            <a href="#" class="nav-item">Achivement</a>
-            <a href="#" class="nav-item">Message Us</a>
+            <a href="#form" class="nav-item">Form</a>
+            <a href="#copyright" class="nav-item">Copyright</a>
         </section>
     </nav>
 
 
-
-    <hr>
 
 
 
@@ -35,71 +33,105 @@
 
             <p>lorem ipsum dimsum sugma</p>
 
-            <div class="banner-img"></div>
+            <div class="banner-img img-1"></div>
+            <div class="banner-img img-2"></div>
+            <div class="banner-img img-3"></div>
+
+            <button type="submit" onclick="showBanner()">Next Slide</button>
+
         </article>
 
         <hr>
 
         <section>
             <header id="our-profile">
-                <h1>Our Profile</h1>
+                <h1>Skills</h1>
             </header>
             
             <section class="profile-container">
                 <div class="profile-item">
                     <div class="profile-image"></div>
-                    <h2>Software Engineer</h2>
+                    <h2>Front End Developer</h2>
                 </div>
 
                 <div class="profile-item">
                     <div class="profile-image"></div>
-                    <h2>Software Engineer</h2>
+                    <h2>Back End Developer</h2>
                 </div>
 
                 <div class="profile-item">
                     <div class="profile-image"></div>
-                    <h2>Software Engineer</h2>
+                    <h2>Full Stack Developer</h2>
                 </div>
             </section>
 
         </section>
 
-        <section class="contentForm">
-            <div class="divForm">
-            <header class="judulForm">Messsage Us</header>
-            <form action="" class="form">
-                <div class="formNama">
-                    <label for="nama">Nama      : </label>
-                    <input type="text" class="textNama">
-                </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+     
 
-                <div class="formTanggalLahir">
-                    <label for="tanggalLahir">Tanggal Lahir     : </label>
-                    <input type="date" class="tanggalLahirClass">
+        <section class="section-form" id="form">
+            <div class="container">
+          <div class="form-container">
+            <header>
+            <h2>Message Us</h2>
+            </header>
+            <form name="message-form" onsubmit="return validateForm()">
+              <div class="form-group">
+                <label for="name">Nama</label>
+                <span class="colon">:</span>
+                <input type="text" id="name" name="name" placeholder="Nama" />
+              </div>
+    
+              <div class="form-group">
+                <label for="birthdate">Tanggal lahir</label>
+                <span class="colon">:</span>
+                <input type="date" id="birthdate" name="birthdate" />
+              </div>
+    
+              <div class="form-group">
+                <label>Jenis Kelamin</label>
+                <span class="colon">:</span>
+                <div class="radio-group">
+                  <input type="radio" id="male" name="gender" value="Laki-Laki" />
+                  <label for="male">Laki-Laki</label>
+                  <input type="radio" id="female" name="gender" value="Perempuan" />
+                  <label for="female">Perempuan</label>
                 </div>
-
-                <div class="formJenisKelamin">
-                    <label for="jenisKelamin">Jenis Kelamin     : </label>
-                        <div>
-                            <input type="radio" id="pria" name="jenisKelamin"><label for="pria">Pria</label>
-                            <input type="radio" id="wanita" name="jenisKelamin"><label for="wanita">Wanita</label>
-                        </div>
-                </div>
-
-                <div class="formPesan">
-                    <label for="pesan">Pesan        : </label>
-                    <textarea name="" id="pesan" class="textAreaPesan"></textarea>
-                </div>
-
-                <div class="formButtonSubmit">
-                    <input type="button" value="Submit" class="buttonSubmit">
-                </div>
-
+              </div>
+    
+              <div class="form-group">
+                <label for="message">Pesan</label>
+                <span class="colon">:</span>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Pesan"
+                ></textarea>
+              </div>
+    
+              <button type="submit">Submit</button>
             </form>
-            </div>
+          </div>
+    
+          <div class="output-container">
+            <h3>Current Time: Fri Jun 17 2022 11:27:28 GMT+0100</h3>
+            <p><strong>Nama :</strong> Harfi Novian</p>
+            <p><strong>Tanggal Lahir :</strong> 01/11/1995</p>
+            <p><strong>Jenis Kelamin :</strong> Laki-Laki</p>
+            <p><strong>Pesan :</strong> Lagi Belajar buat Website</p>
+          </div>
+    
+        </div>
+          </section>
 
-                <textarea name="" id="inputInformation" class="textAreaContent"></textarea>
-        </section>
+
 
     </main>
 
@@ -109,10 +141,11 @@
 
 
 
-    <footer>
+    <footer id="copyright">
         <p>Made by Natanael</p>
     </footer>
 
+    <script src="js\script.js"></script>
 
 
 </body>

@@ -1,3 +1,7 @@
+body{
+  background-color: rgb(243, 243, 243);
+}
+
 .nav-item{
     border: 1px solid;
     color: black;
@@ -10,6 +14,7 @@
 
 .nav-container{
     display: flex;
+    background-color: white;
 }
 
 nav{
@@ -17,6 +22,11 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+
+/* .navigation{
+  background-color: yellow;
+  padding: 10px;
+} */
 
 .logo-icon{
     height: 48px;
@@ -28,11 +38,30 @@ nav{
 }
 
 .banner-img{
-    height: 300px;
-    background-image: url(https://picsum.photos/id/237/536/354);
+    height: 400px;
+    /* background-image: url(https://picsum.photos/id/237/536/354); */
     background-size: cover;
     background-position: center;
 }
+
+ .img-1{
+  background-image: url(https://picsum.photos/id/237/536/354);
+  display: block;
+}
+
+.image-2{
+  background-image: url(https://picsum.photos/id/870/200/300?grayscale&blur=2);
+  display: none;
+}
+
+.image-3{
+  background-image: url(https://picsum.photos/200/300/?blur);
+  display: none;
+} 
+
+
+
+
 
 .profile-item{
     height: 100px;
@@ -40,12 +69,12 @@ nav{
 }
 
 .profile-image{
-    height: 50px;
-    background-image: url(https://picsum.photos/seed/picsum/536/354);
+    height: 100px;
+    width: 100px;
+    background-image: url(https://picsum.photos/id/237/536/354);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    width: 50px;
 }
 
 .profile-container{
@@ -54,26 +83,13 @@ nav{
 }
 
 
-.judulForm{
-    font-size: 23px;
-    font-weight: bold;
+
+
+.section-form{
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.contentForm{
-    display: flex;
-    justify-content: space-around;
-    height: 300px;
-}
-
-.form{
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-}
-
-.divForm{
-padding: 30px;
-}
 
 /* .informationForm{ 
     display: flex;
@@ -81,49 +97,101 @@ padding: 30px;
     padding: 30px;
 }*/
 
-.textAreaContent{
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+  }
+  
+  .form-container {
+    padding: 10px;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .radio-group {
+    margin-top: 5px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .output-container {
+    padding: 10px;
+    border-left: 1px solid #ddd;
+  }
+  
+  .output-container h3 {
+    margin-top: 0;
+  }
+  
+  .form-group {
     display: flex;
-    height: 250px;
-    width: 300px;
-    margin: 20px;
-}
-
-.formNama{
-    display: flex;
-    justify-content: space-between;
-}
-
-.formTanggalLahir{
-    display: flex;
-    justify-content: space-between;
-}
-
-.formJenisKelamin{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.formPesan{
-    display: flex;
-    justify-content: space-between;
-}
-
-.formButtonSubmit{
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    flex: 0 0 120px;
+    margin-top: 0;
+  }
+  
+  .form-group .colon {
+    flex: 0 0 20px;
     text-align: center;
-}
-
-.buttonSubmit{
-    width: 300px;
-}
-
-.textAreaPesan{
-    width: 180px;
-}
-
-.tanggalLahirClass{
-    width: 180px;
-}
-
-.textNama{
-    width: 177px;
-}
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="date"],
+  .form-group .radio-group,
+  .form-group textarea {
+    flex: 1;
+    margin-top: 0;
+  }
+  
+  .radio-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .radio-group input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .radio-group label {
+    flex: 0 0 auto;
+    margin-right: 15px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
