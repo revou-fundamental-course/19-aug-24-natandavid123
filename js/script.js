@@ -1,4 +1,6 @@
 
+
+// untuk slide banner, tapi gak jalan T_T
 let indexSlide = 1;
 showBanner(1);
 
@@ -25,6 +27,7 @@ function showBanner(indexBanner){
 }
 
 
+// ini adalah untuk validasi isi form
 function validateForm() {
     const name = document.forms['message-form']['name'].value;
     const birthDate = document.forms['message-form']['birthdate'].value;
@@ -52,7 +55,7 @@ function validateForm() {
         return false;
         
     }
-
+    
     
     nameInformation.innerHTML = "<span>Nama anda adalah<span/>" + name;
     
@@ -66,34 +69,24 @@ function validateForm() {
 }
 
 
+
+
+
+// ini adalah untuk menampilkan inputan
 function showInformation(){
 
-    const name1 = document.getElementByID('name');
-    const birthdate1 = document.getelementbyID("birthdate");
-    const gender1 = document.getelementbyID("male") || document.getelementbyID("female");
-    const message1 = document.getelementbyID("message");
-    const nameInformation = document.getelementbyID("name-information");
-    const birthdateInformation = document.getelementbyID("birthdate");
-    const genderInformation = document.getElementsByClassName("radio-group");
-    const messageInformation = document.getelementbyID("message");
+    const name = document.getElementById('name').value;
+    const birthDate = document.getElementById('birthDate').value;
+    const gender = document.querySelector('input[name="gender"]:checked');
+    const message = document.getElementById('message').value;
+    const result = document.getElementById('result');
 
-    function fun1(){
-        nameInformation.innerHTML = name1.value;
-        birthdateInformation.innerHTML = birthdate1.value;
-        genderInformation.innerHTML = gender1.value;
-        messageInformation.innerHTML = message1.value;
-    }
+    result.textContent = `Nama: ${name}, Tanggal Lahir: ${birthDate}, Jenis Kelamin: ${gender.value}, Pesan: ${message}`;
 
 }
 
+
+
+
    
 
-
-// function informationForm(){
-//     var nameinformation = document.getElementById("name-information");
-//     var birthDateInformation = document.getElementById("birthdate-information");
-//     var genderInformation = document.getElementByClass("radio-group-information");
-//     var messagesInformation = document.getElementById("message-information");
-
-//     nameInformation.innerHTML = "<span>Nama anda adalah<span/>" + name;
-// }

@@ -23,24 +23,7 @@ nav{
     justify-content: space-between;
 }
 
-/* main{
-  margin-top: 50px;
-} */
 
-/* .top-bar{
-  height: 50px;
-  width: 100%;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-} */
-
- /* .navigation{
-  background-color: yellow;
-  padding: 10px;
-} */
 
 .logo-icon{
     height: 48px;
@@ -53,7 +36,6 @@ nav{
 
 .banner-img{
     height: 400px;
-    /* background-image: url(https://picsum.photos/id/237/536/354); */
     background-size: cover;
     background-position: center;
 }
@@ -73,9 +55,6 @@ nav{
   display: none;
 }
 
-/* .banner-button{
-  background-color: white;
-} */
 
 
 
@@ -109,11 +88,6 @@ nav{
 }
 
 
-/* .informationForm{ 
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 30px;
-}*/
 
 .container {
     display: grid;
