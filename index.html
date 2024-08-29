@@ -8,16 +8,18 @@
 </head>
 <body>
     <nav class="navigation">
+      
         <header>
             <div class="logo-icon"></div>
         </header>
 
         <section class="nav-container">
-            <a href="#" class="nav-item">Home</a>
-            <a href="#our-profile" class="nav-item">Our Profile</a>
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#our-profile" class="nav-item">Skills</a>
             <a href="#form" class="nav-item">Form</a>
             <a href="#copyright" class="nav-item">Copyright</a>
         </section>
+      
     </nav>
 
 
@@ -27,7 +29,7 @@
 
     <main>
         <article>
-            <header>
+            <header id="home">
                 <h1>Welcome user, to our website</h1>
             </header>
 
@@ -37,7 +39,7 @@
             <div class="banner-img img-2"></div>
             <div class="banner-img img-3"></div>
 
-            <button type="submit" onclick="showBanner()">Next Slide</button>
+            <button type="button" onclick="showBanner()" class="banner-button">Next Slide</button>
 
         </article>
 
@@ -77,59 +79,61 @@
      
 
         <section class="section-form" id="form">
-            <div class="container">
-          <div class="form-container">
-            <header>
-            <h2>Message Us</h2>
-            </header>
-            <form name="message-form" onsubmit="return validateForm()">
-              <div class="form-group">
-                <label for="name">Nama</label>
-                <span class="colon">:</span>
-                <input type="text" id="name" name="name" placeholder="Nama" />
-              </div>
-    
-              <div class="form-group">
-                <label for="birthdate">Tanggal lahir</label>
-                <span class="colon">:</span>
-                <input type="date" id="birthdate" name="birthdate" />
-              </div>
-    
-              <div class="form-group">
-                <label>Jenis Kelamin</label>
-                <span class="colon">:</span>
-                <div class="radio-group">
-                  <input type="radio" id="male" name="gender" value="Laki-Laki" />
-                  <label for="male">Laki-Laki</label>
-                  <input type="radio" id="female" name="gender" value="Perempuan" />
-                  <label for="female">Perempuan</label>
+          <div class="container">
+            <div class="form-container">
+              <header>
+                <h2>Message Us</h2>
+              </header>
+
+              <form name="message-form" onsubmit="return validateForm()">
+                <div class="form-group">
+                  <label for="name">Nama</label>
+                  <span class="colon">:</span>
+                  <input type="text" id="name" name="name" placeholder="Nama" />
                 </div>
-              </div>
     
-              <div class="form-group">
-                <label for="message">Pesan</label>
-                <span class="colon">:</span>
-                <textarea
+                <div class="form-group">
+                  <label for="birthdate">Tanggal lahir</label>
+                  <span class="colon">:</span>
+                  <input type="date" id="birthdate" name="birthdate" />
+                </div>
+    
+                <div class="form-group">
+                  <label>Jenis Kelamin</label>
+                  <span class="colon">:</span>
+                  <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="Laki-Laki" />
+                    <label for="male">Laki-Laki</label>
+                    <input type="radio" id="female" name="gender" value="Perempuan" />
+                    <label for="female">Perempuan</label>
+                  </div>
+                </div>
+    
+                <div class="form-group">
+                  <label for="message">Pesan</label>
+                  <span class="colon">:</span>
+                  <textarea
                   id="message"
                   name="message"
-                  placeholder="Pesan"
-                ></textarea>
-              </div>
+                  placeholder="Pesan"></textarea>
+                </div>
+
+
     
-              <button type="submit">Submit</button>
-            </form>
+                <button type="submit" id="button1" onclick="showInformation()">Submit</button>
+              </form>
+            </div>
+    
+            <div class="output-container">
+              <h3>Current Time: Fri Jun 17 2022 11:27:28 GMT+0100</h3>
+              <p id="name-information"></p>
+              <p id="birthdate-information"></p>
+              <p  id="radio-group-information"></p>
+              <p id="message-information"></p>
+            </div>
+    
           </div>
-    
-          <div class="output-container">
-            <h3>Current Time: Fri Jun 17 2022 11:27:28 GMT+0100</h3>
-            <p><strong>Nama :</strong> Harfi Novian</p>
-            <p><strong>Tanggal Lahir :</strong> 01/11/1995</p>
-            <p><strong>Jenis Kelamin :</strong> Laki-Laki</p>
-            <p><strong>Pesan :</strong> Lagi Belajar buat Website</p>
-          </div>
-    
-        </div>
-          </section>
+        </section>
 
 
 
@@ -141,11 +145,13 @@
 
 
 
-    <footer id="copyright">
-        <p>Made by Natanael</p>
+    <footer>
+      <div class="footer">
+        <p class="copy-p">Made by Natanael</p>
+      </div>
     </footer>
 
-    <script src="js\script.js"></script>
+    <script src="js/script.js"></script>
 
 
 </body>

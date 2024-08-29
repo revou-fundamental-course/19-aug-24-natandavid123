@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(243, 243, 243);
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/bananas.png);
 }
 
 .nav-item{
@@ -23,7 +23,21 @@ nav{
     justify-content: space-between;
 }
 
-/* .navigation{
+/* main{
+  margin-top: 50px;
+} */
+
+/* .top-bar{
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+} */
+
+ /* .navigation{
   background-color: yellow;
   padding: 10px;
 } */
@@ -57,7 +71,11 @@ nav{
 .image-3{
   background-image: url(https://picsum.photos/200/300/?blur);
   display: none;
-} 
+}
+
+/* .banner-button{
+  background-color: white;
+} */
 
 
 
@@ -194,4 +212,19 @@ nav{
   textarea {
     resize: vertical;
     min-height: 100px;
+  }
+
+
+  .footer{
+    height: 50px;
+    background-color: rgb(163, 163, 163);
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-top: 50px;
+  }
+
+  .copy-p{
+    color: rgb(255, 255, 255);
+    margin: none;
   }
